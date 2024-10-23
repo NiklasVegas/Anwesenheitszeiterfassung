@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A3EE5732CC905E3002728BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3EE5722CC905E3002728BA /* AppDelegate.swift */; };
+		7A3EE5752CC905E3002728BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3EE5742CC905E3002728BA /* SceneDelegate.swift */; };
+		7A3EE57A2CC905E3002728BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A3EE5782CC905E3002728BA /* Main.storyboard */; };
+		7A3EE57C2CC905E4002728BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A3EE57B2CC905E4002728BA /* Assets.xcassets */; };
+		7A3EE57F2CC905E4002728BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A3EE57D2CC905E4002728BA /* LaunchScreen.storyboard */; };
+		7A3EE5872CC90845002728BA /* PatientData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3EE5862CC90845002728BA /* PatientData.swift */; };
+		7A7DA0E72CDB8B970075FF9A /* CoreXLSX in Frameworks */ = {isa = PBXBuildFile; productRef = 7A7DA0E62CDB8B970075FF9A /* CoreXLSX */; };
+		7A8AE7E02CEB94C9002470BF /* BarcodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 7A8AE7DF2CEB94C9002470BF /* BarcodeScanner */; };
+		7AFE394E2CDB930B004388C4 /* SwiftCSVExport in Frameworks */ = {isa = PBXBuildFile; productRef = 7AFE394D2CDB930B004388C4 /* SwiftCSVExport */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7A3EE56F2CC905E3002728BA /* Anwesenheitszeiterfassung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anwesenheitszeiterfassung.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A3EE5722CC905E3002728BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A3EE5742CC905E3002728BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7A3EE5792CC905E3002728BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A3EE57B2CC905E4002728BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A3EE57E2CC905E4002728BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A3EE5802CC905E4002728BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A3EE5862CC90845002728BA /* PatientData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		18524D7E2CF88A1600DA76CD /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ActionsViewController.swift,
+				DetailedPatientViewController.swift,
+				TableViewController.swift,
+				"TableViewController+Datamanagement.swift",
+				"TableViewController+TableView.swift",
+			);
+			target = 7A3EE56E2CC905E3002728BA /* Anwesenheitszeiterfassung */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		18524D7D2CF88A0300DA76CD /* ViewControllers */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (18524D7E2CF88A1600DA76CD /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ViewControllers; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A3EE56C2CC905E3002728BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A7DA0E72CDB8B970075FF9A /* CoreXLSX in Frameworks */,
+				7AFE394E2CDB930B004388C4 /* SwiftCSVExport in Frameworks */,
+				7A8AE7E02CEB94C9002470BF /* BarcodeScanner in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A3EE5662CC905E3002728BA = {
+			isa = PBXGroup;
+			children = (
+				18524D7D2CF88A0300DA76CD /* ViewControllers */,
+				7A3EE5712CC905E3002728BA /* Anwesenheitszeiterfassung */,
+				7A3EE5702CC905E3002728BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A3EE5702CC905E3002728BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A3EE56F2CC905E3002728BA /* Anwesenheitszeiterfassung.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A3EE5712CC905E3002728BA /* Anwesenheitszeiterfassung */ = {
+			isa = PBXGroup;
+			children = (
+				7A3EE5722CC905E3002728BA /* AppDelegate.swift */,
+				7A3EE57B2CC905E4002728BA /* Assets.xcassets */,
+				7A3EE5802CC905E4002728BA /* Info.plist */,
+				7A3EE57D2CC905E4002728BA /* LaunchScreen.storyboard */,
+				7A3EE5782CC905E3002728BA /* Main.storyboard */,
+				7A3EE5862CC90845002728BA /* PatientData.swift */,
+				7A3EE5742CC905E3002728BA /* SceneDelegate.swift */,
+			);
+			path = Anwesenheitszeiterfassung;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A3EE56E2CC905E3002728BA /* Anwesenheitszeiterfassung */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A3EE5832CC905E4002728BA /* Build configuration list for PBXNativeTarget "Anwesenheitszeiterfassung" */;
+			buildPhases = (
+				7A3EE56B2CC905E3002728BA /* Sources */,
+				7A3EE56C2CC905E3002728BA /* Frameworks */,
+				7A3EE56D2CC905E3002728BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Anwesenheitszeiterfassung;
+			packageProductDependencies = (
+				7A7DA0E62CDB8B970075FF9A /* CoreXLSX */,
+				7AFE394D2CDB930B004388C4 /* SwiftCSVExport */,
+				7A8AE7DF2CEB94C9002470BF /* BarcodeScanner */,
+			);
+			productName = Anwesenheitszeiterfassung;
+			productReference = 7A3EE56F2CC905E3002728BA /* Anwesenheitszeiterfassung.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A3EE5672CC905E3002728BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					7A3EE56E2CC905E3002728BA = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 7A3EE56A2CC905E3002728BA /* Build configuration list for PBXProject "Anwesenheitszeiterfassung" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A3EE5662CC905E3002728BA;
+			packageReferences = (
+				7A7DA0E52CDB8B970075FF9A /* XCRemoteSwiftPackageReference "CoreXLSX" */,
+				7AFE394C2CDB930B004388C4 /* XCRemoteSwiftPackageReference "SwiftCSVExport" */,
+				7A8AE7DE2CEB94C9002470BF /* XCRemoteSwiftPackageReference "BarcodeScanner" */,
+			);
+			productRefGroup = 7A3EE5702CC905E3002728BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A3EE56E2CC905E3002728BA /* Anwesenheitszeiterfassung */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A3EE56D2CC905E3002728BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3EE57F2CC905E4002728BA /* LaunchScreen.storyboard in Resources */,
+				7A3EE57C2CC905E4002728BA /* Assets.xcassets in Resources */,
+				7A3EE57A2CC905E3002728BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A3EE56B2CC905E3002728BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3EE5732CC905E3002728BA /* AppDelegate.swift in Sources */,
+				7A3EE5752CC905E3002728BA /* SceneDelegate.swift in Sources */,
+				7A3EE5872CC90845002728BA /* PatientData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7A3EE5782CC905E3002728BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A3EE5792CC905E3002728BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A3EE57D2CC905E4002728BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A3EE57E2CC905E4002728BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A3EE5812CC905E4002728BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A3EE5822CC905E4002728BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A3EE5842CC905E4002728BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M4797J7G9Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Anwesenheitszeiterfassung/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scanning Barcodes";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VegasCode.Anwesenheitszeiterfassung;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		7A3EE5852CC905E4002728BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M4797J7G9Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Anwesenheitszeiterfassung/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scanning Barcodes";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VegasCode.Anwesenheitszeiterfassung;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A3EE56A2CC905E3002728BA /* Build configuration list for PBXProject "Anwesenheitszeiterfassung" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A3EE5812CC905E4002728BA /* Debug */,
+				7A3EE5822CC905E4002728BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A3EE5832CC905E4002728BA /* Build configuration list for PBXNativeTarget "Anwesenheitszeiterfassung" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A3EE5842CC905E4002728BA /* Debug */,
+				7A3EE5852CC905E4002728BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A7DA0E52CDB8B970075FF9A /* XCRemoteSwiftPackageReference "CoreXLSX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoreOffice/CoreXLSX";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		7A8AE7DE2CEB94C9002470BF /* XCRemoteSwiftPackageReference "BarcodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hyperoslo/BarcodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		7AFE394C2CDB930B004388C4 /* XCRemoteSwiftPackageReference "SwiftCSVExport" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vigneshuvi/SwiftCSVExport";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A7DA0E62CDB8B970075FF9A /* CoreXLSX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A7DA0E52CDB8B970075FF9A /* XCRemoteSwiftPackageReference "CoreXLSX" */;
+			productName = CoreXLSX;
+		};
+		7A8AE7DF2CEB94C9002470BF /* BarcodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A8AE7DE2CEB94C9002470BF /* XCRemoteSwiftPackageReference "BarcodeScanner" */;
+			productName = BarcodeScanner;
+		};
+		7AFE394D2CDB930B004388C4 /* SwiftCSVExport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7AFE394C2CDB930B004388C4 /* XCRemoteSwiftPackageReference "SwiftCSVExport" */;
+			productName = SwiftCSVExport;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7A3EE5672CC905E3002728BA /* Project object */;
+}
